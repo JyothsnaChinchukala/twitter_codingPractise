@@ -1,0 +1,64 @@
+###API1
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###API2
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###API3
+GET http://localhost:3000/user/tweets/feed/
+authorization: bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.euehz5FJ-vL0bfRp0vtsJRQ2GWuBTusnBFlBhU5coc4
+
+###API4
+GET http://localhost:3000/user/following/
+authorization: bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.euehz5FJ-vL0bfRp0vtsJRQ2GWuBTusnBFlBhU5coc4
+
+###API5
+GET http://localhost:3000/user/followers/
+authorization: bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.euehz5FJ-vL0bfRp0vtsJRQ2GWuBTusnBFlBhU5coc4
+
+###API6
+GET http://localhost:3000/tweets/2/
+authorization: bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.euehz5FJ-vL0bfRp0vtsJRQ2GWuBTusnBFlBhU5coc4
+
+###API7
+GET http://localhost:3000/tweets/2/likes/
+authorization: bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.euehz5FJ-vL0bfRp0vtsJRQ2GWuBTusnBFlBhU5coc4
+
+###API8
+GET http://localhost:3000/tweets/2/replies/
+authorization: bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.euehz5FJ-vL0bfRp0vtsJRQ2GWuBTusnBFlBhU5coc4
+
+###API9
+GET http://localhost:3000/user/tweets/
+authorization: bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.euehz5FJ-vL0bfRp0vtsJRQ2GWuBTusnBFlBhU5coc4
+
+###API10
+POST http://localhost:3000/user/tweets/
+authorization: bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.euehz5FJ-vL0bfRp0vtsJRQ2GWuBTusnBFlBhU5coc4
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+
+###API11
+DELETE http://localhost:3000/tweets/2/
+authorization: bearer eyJhbGciOiJIUzI1NiJ9.Sm9lQmlkZW4.euehz5FJ-vL0bfRp0vtsJRQ2GWuBTusnBFlBhU5coc4
+
+
+
+
